@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jimp": "^0.16.1",
+    "express": "^4.17.3",
     "pbkdf2": "^3.1.2",
-    "piexifjs": "^1.0.6"
+    "sha3": "^2.1.4"
   }
 }

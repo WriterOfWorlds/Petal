@@ -1,0 +1,15 @@
+const path = require('path');
+const express = require('express');
+	 
+const app = express();
+const router = express.Router();
+
+router.get('/', function(req, res){
+  res.sendFile(path.join(__dirname, '/index.html'));
+});
+app.use('/', router);
+
+let server = app.listen(3000, function(){
+  console.log("App server is running on port 3000");
+  console.log("to end press Ctrl + C");
+});
